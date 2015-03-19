@@ -6,7 +6,7 @@
     "license":     "MIT",
     "require": {
         "php": ">=5.4",
-        "nekland/base-api": "dev-feature/allow-string-body",
+        "nekland/base-api": "~1.1.0",
         "guzzlehttp/guzzle": "~5.0"
     },
     "require-dev": {
