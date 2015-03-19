@@ -22,7 +22,7 @@ class SmsSpec extends ObjectBehavior
         $this->shouldHaveType('Nekland\BaseApi\Api\AbstractApi');
     }
 
-    function it_should_send_sms(AbstractHttpClient $client, TransformerInterface $transformer)
+    function it_should_send_sms(TransformerInterface $transformer)
     {
         $res = [
             'data' => [
