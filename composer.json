@@ -1,0 +1,19 @@
+{
+    "name":        "scoringline/sendinblue-api",
+    "type":        "library",
+    "description": "Make sendinblue api simple to use",
+    "keywords":    ["sendinblue", "api"],
+    "license":     "MIT",
+    "require": {
+        "php": ">=5.4",
+        "nekland/base-api": "dev-feature/allow-string-body",
+        "guzzlehttp/guzzle": "~5.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.1"
+    },
+    "autoload": {
+        "psr-0": { "Scoringline\\": "src/" }
+    },
+    "minimum-stability": "dev"
+}
