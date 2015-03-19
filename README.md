@@ -42,3 +42,7 @@ $sendinblue = new Sendinblue();
 
 $sendinblue->getSmsApi()->sendSms('+33600000000', 'Your name', 'The message you want to send');
 ```
+
+----------------------------------------------------------------
+
+This library is provided to you by [Scoringline](http://en.scoringline.com), if you're searching for more efficient hiring, checkout our application !
