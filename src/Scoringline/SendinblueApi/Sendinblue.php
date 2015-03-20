@@ -21,7 +21,7 @@ class Sendinblue extends ApiFactory
      */
     private $options = [
         'base_url'   => 'https://api.sendinblue.com/v2.0',
-        'user_agent' => 'php-youtube-api (https://github.com/Scoringline/SendinblueApi)'
+        'user_agent' => 'php-sendinblue-api (https://github.com/Scoringline/SendinblueApi)'
     ];
 
     public function __construct(
