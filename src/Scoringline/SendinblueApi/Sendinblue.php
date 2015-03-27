@@ -33,7 +33,13 @@ class Sendinblue extends ApiFactory
         CacheFactory $cacheFactory = null
     ) {
         $this->options = array_merge($this->options, $options);
-        parent::__construct(new HttpClientFactory($this->options), $dispatcher, $transformer, $authFactory, $cacheFactory);
+        parent::__construct(
+            $httpClientFactory === null ? new HttpClientFactory($this->options) : $httpClientFactory,
+            $dispatcher,
+            $transformer,
+            $authFactory,
+            $cacheFactory
+        );
 
         $this->getAuthFactory()->addNamespace('Scoringline\SendinblueApi\Http\Auth');
     }
