@@ -22,6 +22,7 @@ use Symfony\Component\EventDispatcher\EventDispatcher;
  * Class Sendinblue
  *
  * @method \Scoringline\SendinblueApi\Api\Sms getSmsApi()
+ * @method \Scoringline\SendinblueApi\Api\Email getEmailApi()
  */
 class Sendinblue extends ApiFactory
 {
