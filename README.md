@@ -1,7 +1,7 @@
 Sendinblue API
 ==============
 
-[![Build Status](https://travis-ci.org/ScoringLine/SendinblueApi.svg)](https://travis-ci.org/ScoringLine/SendinblueApi)
+[![Build Status](https://travis-ci.org/ScoringLine/SendinblueApi.svg?branch=master)](https://travis-ci.org/ScoringLine/SendinblueApi)
 
 Clean and simple to use lib for use Sendinblue API.
 
