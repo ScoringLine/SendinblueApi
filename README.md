@@ -12,6 +12,20 @@ Clean and simple to use lib for use Sendinblue API.
 
 > For now the only API available is the SMS api, more is coming later, PRs accepted with love.
 
+Installation
+------------
+
+**Requirements:**
+
+* PHP 5.4+
+* composer
+
+Launch the following command to install:
+
+```bash
+$ composer require scoringline/sendinblue-api
+```
+
 Authentication
 --------------
 
