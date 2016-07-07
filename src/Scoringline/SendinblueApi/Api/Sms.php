@@ -33,7 +33,7 @@ class Sms extends AbstractApi
     public function sendSms($to, $from, $text, $webUrl = '', $tag = '', $type = '')
     {
         $result = $this->post(self::API_URL, json_encode([
-            'to'      => $to,
+            'to'      => str_replace(' ', '', $to),
             'from'    => $from,
             'text'    => $text,
             'web_url' => $webUrl,
