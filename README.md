@@ -38,7 +38,7 @@ use Scoringline\SendinblueApi\Sendinblue;
 
 $sendinblue = new Sendinblue();
 
-$sendinblue->authenticate('ApiKey', ['key' => 'YourPrivateApiKey']);
+$sendinblue->useAuthentication('ApiKey', ['key' => 'YourPrivateApiKey']);
 ```
 
 
