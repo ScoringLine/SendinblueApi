@@ -33,7 +33,7 @@ class Sms extends AbstractApi
     public function sendSms($to, $from, $text, $webUrl = '', $tag = '', $type = '')
     {
         $result = $this->post(self::API_URL, json_encode([
-            'to'      => str_replace(' ', '', $to),
+            'to'      => Sms::sanitizePhoneNumber($to),
             'from'    => $from,
             'text'    => $text,
             'web_url' => $webUrl,
@@ -186,5 +186,14 @@ class Sms extends AbstractApi
         }
 
         return $request;
+    }
+
+    /**
+     * @var string $phoneNumber
+     * @return string The sanitized phone number
+     */
+    public static function sanitizePhoneNumber($phoneNumber)
+    {
+        return str_replace(['+', '-', ' ', '(', ')'], '', $phoneNumber);
     }
 }
