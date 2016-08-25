@@ -135,4 +135,10 @@ class SmsSpec extends ObjectBehavior
             ->duringSendCampaign(12, '+33685965788')
         ;
     }
+
+    function it_should_sanitize_phone_number()
+    {
+        $this->sanitizePhoneNumber('+1 234-324-6532')->shouldReturn('12343246532');
+        $this->sanitizePhoneNumber('+33(0)62453-27-32')->shouldReturn('330624532732');
+    }
 }
