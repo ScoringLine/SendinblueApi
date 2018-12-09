@@ -6,10 +6,11 @@
     "license":     "MIT",
     "require": {
         "php": ">=5.5",
+        "ext-json": "*",
         "nekland/base-api": "^1.1",
         "guzzlehttp/guzzle": "^6.0",
-        "symfony/http-foundation": "^2.3.0",
-        "symfony/property-access": "^2.3.0"
+        "symfony/http-foundation": "^3.0",
+        "symfony/property-access": "^3.0"
     },
     "require-dev": {
         "phpspec/phpspec": "~2.1"
